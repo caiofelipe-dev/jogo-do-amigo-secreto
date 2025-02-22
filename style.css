@@ -17,6 +17,7 @@
 
 body {
     height: 100vh;
+    width: 100vw;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
@@ -159,4 +160,13 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+@media screen and (max-width: 768px) {
+    header img {
+        position: absolute;
+        z-index: -1;
+        width: 250px;
+        top: 0;
+    }
 }
